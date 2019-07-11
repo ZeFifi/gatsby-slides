@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Présentation de la JAMStack</title>
+    <meta name="description" content="Présentation de la JAMStack">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+</head>
+
+<body>
+<header role="banner">
+    <nav role="navigation">
+        <ul>
+            <li class="github">
+                <a rel="external" href="https://github.com/zefifi" target="_blank" title="Github">
+                    <svg class="fa-github">
+                        <use xlink:href="#fa-github"></use>
+                    </svg>
+                    <em>WebSlides</em>
+                </a>
+            </li>
+            <li class="twitter">
+                <a rel="external" href="https://twitter.com/PPinceloup" target="_blank" title="Twitter">
+                    <svg class="fa-twitter">
+                        <use xlink:href="#fa-twitter"></use>
+                    </svg>
+                    <em>@PPinceloup</em>
+                </a>
+            </li>
+            <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+    <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-blue">
+            <span class="background dark"></span>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h1>
+                    <strong>Présentation de la JAMStack</strong>
+                </h1>
+                <p class="text-symbols">* * * </p>
+                <p>Par Philippe Pinceloup
+                </p>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <div class="wrap size-50 bg-white">
+                <h4><strong>Sommaire</strong></h4>
+                <hr>
+                <ol>
+                    <li>Qu'est-ce que la JAMStack ?</li>
+                    <li>Pourquoi la JAMStack ?</li>
+                    <li>Cas pratique : développons un blog !</li>
+                    <li>Questions/réponses</li>
+                </ol>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <div class="wrap size-50 bg-white">
+                <h2>
+                    <strong>Qu'est-ce que la JAMStack ?</strong>
+                </h2>
+                <hr>
+                <p>JAM de JAMStack signifie JavaScript, APIs et Markup. Pourquoi ? Parce qu'ils reposent sur le Javascript,
+                    dépendent des APIs comme source de données et servent des pages HTML (Hyper Text Markup
+                    Language).</p>
+                <p>Il s'agit d'une manière de développer des sites Web statiques sans base de données.</p>
+            </div>
+            <!-- .end .wrap -->
+        </section><section>
+            <div class="wrap size-50 bg-white">
+                <h2>
+                    <strong>Pourquoi la JAMStack ?</strong>
+                </h2>
+                <hr>
+                <p>Une simple question qui a son lot de réponses ! Parmi lesquelles :
+                <ol>
+                    <li>Les performances</li>
+                    <li>La sécurité</li>
+                    <li>Les facilités de développement...</li>
+                    <li>...et de déploiement</li>
+                    <li>Le prix de l'hébergement</li>
+                </ol></p>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>Les performances</strong></h3>
+                    </div>
+                    <div class="column">
+                        <p class="text-intro">Les sites développés sont servis en HTML depuis des CDN. (Content
+                        Delivery Network). La génération des fichiers ne se fait plus côté serveur, mais directement
+                        au déploiement</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>La sécurité</strong></h3>
+                    </div>
+                    <div class="column">
+                        <p class="text-intro">Pas de base de données + utilisation d'APIs pour obtenir des données =
+                            moins de "chances" de piratage. De plus, des services comme Netlify que nous verrons plus
+                            plus tard utilisent le protocole HTTPS.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>Les facilités de développement...</strong></h3>
+                    </div>
+                    <div class="column">
+                        <p class="text-intro">Travailler avec la JAMStack est très facile, puisque pour développer un
+                        projet avec, comme un blog par exemple, il suffira d'avoir des bases en Javascript et en Markdown,
+                        et bien connaître le HTML et le CSS. Mettre en place un petit projet ne nécessite que quelques
+                        heures, déploiement compris !</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>... et de déploiement !</strong></h3>
+                    </div>
+                    <div class="column">
+                        <p class="text-intro">Le projet vit sur Git ! Envoyez vos fichiers sur la branche de votre choix
+                        et profitez d'un déploiement automatique. Du coup, votre site bénéficie d'un versionnement pour
+                        chaque déploiement. Un plus pour la sécurité, non ?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap">
+                <div class="grid vertical-align">
+                    <div class="column">
+                        <h3><strong>Le prix de l'hébergement</strong></h3>
+                    </div>
+                    <div class="column">
+                        <p class="text-intro">Ce prix peut aller de peu cher à gratuit ! Puisque tout vit sur Git,
+                        pourquoi ne pas utiliser la plateforme GitHub pour héberger vos fichiers ?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section class="bg-blue">
+            <span class="background dark"></span>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h1>
+                    <strong>Cas pratique : développons un blog !</strong>
+                </h1>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap size-50">
+                <h2>Pour ce faire, voici les technologies que nous allons utiliser</h2>
+                <hr>
+                <ol class="text-cols">
+                    <li>GatsbyJS</li>
+                    <li>React</li>
+                    <li>HTML/CSS</li>
+                    <li>Git/GitHub</li>
+                    <li>Markdown</li>
+                </ol>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+        <section class="bg-blue">
+            <span class="background dark"></span>
+            <!--.wrap = container (width: 90%) -->
+            <div class="wrap aligncenter">
+                <h1>
+                    <strong>Merci à tous !</strong>
+                </h1>
+            </div>
+            <!-- .end .wrap -->
+        </section>
+    </article>
+</main>
+<!--main-->
+
+<!-- Required -->
+<script src="js/webslides.js"></script>
+<script>
+  window.ws = new WebSlides();
+</script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+
+<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+<script defer src="js/svg-icons.js"></script>
+
+</body>
+</html>
